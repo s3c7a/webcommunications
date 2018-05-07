@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Test Audio with Java Script</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"  href="styles.css">
+	</head>
+
+<style>
+body {
+	margin: 0 auto;
+	width: 62%;
+	}
+
+	figure{
+		width: 100%;
+	}
+
+	video {
+		width:100%;
+	}
+/*CSS References the completed DOM*/
+	#controlpanel button{
+		background:#000;
+		color:#fff;
+		border: 0;
+
+	}
+
+</style>
+
+<body>
+
+<h1>Audio Controllers JavaScript</h1>
+<audio autoplay src="media/ignite.mp3"></audio>
+
+
+</body>
+
+
+<script>
+var audiotrack = document.querySelector("audio");
+var fader = document.createElement("input");
+fader.addAttribute("type","range"); // First being the attribute the second is the value to that attribute.
+document.body.appendChild(fader);
+
+</script>
+
+</html>

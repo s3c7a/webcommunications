@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Examples</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="https://www.resonancerepatterning.net/">About Resonance Repatterning<sup>&reg;</sup></a>
+    <cite><a href="https://www.amazon.ca/Spiral-Up-Energizing-Options-right/dp/1937710033/ref=sr_1_fkmr0_3?ie=UTF8&qid=1513054221&sr=8-3-fkmr0&keywords=clohe+faith+wordsworth">Spiral Up!: 127 Energizing Options</a></cite>
+    <a href="https://en.wikipedia.org/wiki/Quantum_mechanics">About Quantum Physics</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Spiral Up: 127 Energizing Options</h1>
+  <p>Select an energizing option to be your best right now.</p>
+<form method="post" action="process.php">
+<fieldset>
+  <legend>Personal Information</legend>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Name" required>
+    <label for="lastname">Lastname</label>
+    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+</fieldset>
+
+<fieldset>
+  <legend>What problem are you facing?</legend>
+    <label for="issue">Select one option that best represents your current state or need(s):</label>
+    <select name="issue" id="issue" required>
+      <option value="">--- Select one option ---</option>
+      <option value="1">I'm feeling off.</option>
+      <option value="2">What do you want instead of your problem?</option>
+      <option value="3">Point of choice.</option>
+      <option value="4">Save your day.</option>
+      <option value="5">Negative feelings.</option>
+      <option value="6">Three negative attitudes.</option>
+      <option value="7">Acceptance.</option>
+      <option value="8">Life is too much.</option>
+      <option value="9">Diamond of intention.</option>
+      <option value="10">Out of negative beliefs.</option>
+      <option value="11">Resonate with positive beliefs.</option>
+    </select>
+</fieldset>
+
+<fieldset>
+  <legend>What do you want to resonate with?</legend>
+  <p><label for="positive">Enter a positive statement, feelings or attitudes you want to resonate with.</label>
+  <textarea name="positive" id="positive" rows="8" cols="80"></textarea></p>
+  <p><label for="feelings">Or select one of the following positive feelings you want to resonate with:</label></p>
+
+  <p><input type="checkbox" id="strenght" name="feelings[]" value="strength">
+  <label form="strenght">Strength</label>
+  <input type="checkbox" id="security" name="feelings[]" value="security">
+  <label form="security">Security</label>
+  <input type="checkbox" id="confidence" name="feelings[]" value="confidence">
+  <label form="confidence">Confidence</label>
+  <input type="checkbox" id="health" name="feelings[]" value="health">
+  <label form="health">Health</label>
+  <input type="checkbox" id="love" name="feelings[]" value="love"><label form="love">Love</label>
+  <input type="checkbox" id="relaxation" name="feelings[]" value="relaxation">
+  <label for="relaxation">Relaxation</label></p>
+</fieldset>
+
+<fieldset>
+  <legend>Select an energizing option [array]</legend>
+    <p><input type="radio" name="eo" value="1" id="A" checked>
+    <label for="A">Process options</label></p>
+    <p><input type="radio" name="eo" value="2" id="B">
+    <label for="B">Sound options</label></p>
+    <p><input type="radio" name="eo" value="3" id="C">
+    <label for="C">Colour and light options</label></p>
+    <p><input type="radio" name="eo" value="4" id="D">
+    <label for="D">Movement</label></p>
+    <p><input type="radio" name="eo" value="5" id="E">
+    <label for="E">Breath options</label></p>
+    <p><input type="radio" name="eo" value="6" id="F">
+    <label for="F">Energy contact options</label></p>
+    <p><input type="radio" name="eo" value="7" id="G">
+    <label for="G">Essential oils options</label></p>
+</fieldset>
+<p><input type="submit" name="submit" id="submit" value="Go to energizing option"></p>
+</form>
+
+</main>
+<footer><p>This is a powerful tool, use it according to what you think or feel will make you get better.</p></footer>
+<footer><p>The page was created by Hector A. Arevalo. The Resonance Repatterning<sup>&reg;</sup> Method is a registered mark by Chlohe Faith Wordsworth.</p></footer>
+
+<p></p>
+
+</body>
+</html>

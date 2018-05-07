@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	margin: 0;
+	background-color: #006;
+	color:#FFF;
+	}
+div {
+	margin:0 auto;
+	width:55%;
+	}
+img {
+	width:100%;
+	}
